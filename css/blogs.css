@@ -1,0 +1,120 @@
+
+#blogsSection {
+    width: 100%;
+    padding: 100px;
+}
+
+#blogsSectionContainer {
+    width: 100%;
+}
+
+#blogBoxs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blogBox {
+    width: calc((100% - 80px) / 3);
+    border: solid 1px rgb(203, 203, 203);
+    transition: all .4s ease;
+}
+
+.blogBox:hover {
+    box-shadow: 0 0 20px 10px rgb(213, 213, 213, 0.5);
+}
+
+.blogBoxPicture {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+}
+
+#blogBox1 .blogBoxPicture {
+    background-image: url('../assets/images/blog1.jpg');
+}
+
+#blogBox2 .blogBoxPicture {
+    background-image: url('../assets/images/blog2.jpg');
+}
+
+#blogBox3 .blogBoxPicture {
+    background-image: url('../assets/images/blog3.jpg');
+}
+
+.blogBoxInfo {
+    padding: 20px;
+}
+
+.blogBoxInfo h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(101, 101, 101);
+    padding-bottom: 25px;
+}
+
+.blogBoxInfo h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 5px;
+    letter-spacing: .7px;
+    transition: all .2s ease;
+}
+
+.blogBoxInfo h2:hover {
+    color: #0762f8;
+}
+
+.blogBoxInfo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: rgb(94, 94, 94);
+    padding-bottom: 10px;
+    letter-spacing: .7px;
+}
+
+.readMoreBtn {
+    display: flex;
+    align-items: center;
+}
+
+.readMoreBtn span, .readMoreBtn i  {
+    color: rgb(94, 94, 94);
+    padding-right: 5px;
+}    
+
+.readMoreBtn:hover span, .readMoreBtn:hover i  {
+    color: #0762f8;
+}
+
+@media (max-width: 1024px) {
+    #blogsSection {
+        padding: 60px;
+    }
+    .blogBox {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #blogBoxs {
+        flex-direction: column;
+    }
+    .blogBoxPicture {
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #blogsSection {
+        padding: 40px 30px;
+    }
+    .blogBoxPicture {
+        height: 200px;
+    }
+    .blogBoxInfo h2 {
+        font-size: 1.25rem;
+    }
+}

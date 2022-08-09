@@ -1,0 +1,132 @@
+
+
+header {
+    width: 100%;
+}
+
+#headerHeroContainer {
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+    background-image: url('../assets/images/slider.jpg');
+    background-size: cover;
+    background-position-x: right;
+}
+
+#headerHeroContainerBox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#headerHeroContent {
+    padding: 0 100px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#headerHeroContent h2 {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+#headerHeroContent h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    padding-bottom: 40px;
+}
+
+#headerHeroContentBoxBtn {
+    display: flex;
+    align-items: center;
+}
+
+.headerHeroContentBoxBtnContainer {
+    padding: 1rem;
+    background-color: #141E61;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.headerHeroContentBoxBtnContainer:hover {
+    background-color: #0F044C;
+}
+
+.headerHeroContentBoxBtnContainer a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+}
+
+.headerHeroContentBoxBtnContainer img {
+    height: 1rem;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) { 
+
+    #headerHeroContent {
+        padding: 0 60px;
+    }
+
+    #headerHeroContent h1 {
+        font-size: 2rem;
+    } 
+
+    #headerHeroContent h2 {
+        font-size: 1.1rem;
+    }
+
+    #headerHeroContainer {
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 600px) { 
+
+    #headerHeroContent {
+        padding: 0 30px;
+    }
+
+    #headerHeroContent h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-bottom: 60px;
+    } 
+
+    #headerHeroContent h2 {
+        font-size: 1rem;
+    }
+
+    .headerHeroContentBoxBtnContainer {
+        padding: .8rem;
+        background-color: #141E61;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #headerHeroContentBoxBtn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerHeroContentBoxBtnContainer a {
+        font-size: .8rem;
+        text-decoration: none;
+        color: white;
+        line-height: 1rem;
+    }
+}
+

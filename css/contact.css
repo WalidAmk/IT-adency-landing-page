@@ -1,0 +1,129 @@
+
+
+#contactSection {
+    width: 100%;
+    background-image: url('../assets/images/contactUs.jpg');
+    background-size: cover;
+}
+
+#contactSectionContainer {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgba(7, 99, 248, 0.6);
+}
+
+#contactSectionContainer h1 {
+    font-size: 2.8rem;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+
+#contactFormContainer {
+    width: 100%;
+}
+
+#contactFormContainer form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#contactFormBox {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#contactFormContainer form input, #contactFormContainer form textarea {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: solid 2px white;
+    border-radius: 5px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#contactFormContainer form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    height: 200px;
+}
+
+#contactFormBox input:first-child {
+    width: calc(25% - 20px);
+}
+#contactFormBox input:last-child {
+    width: calc(75% - 20px);
+}
+
+#contactFormContainer form input:focus, #contactFormContainer  form textarea:focus {
+    outline: none;
+}
+
+#contactFormContainer form input::placeholder, #contactFormContainer  form textarea::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#contactFormContainer form button {
+    background-color: rgb(255, 255, 255);
+    color: rgba(7, 99, 248);
+    padding: 10px 30px;
+    border: solid 2px white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+#contactFormContainer form button:hover {
+    background-color: rgba(7, 99, 248);
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    #contactFormBox input {
+        width: 100% !important;
+    }
+    #contactFormBox {
+        flex-direction: column;
+    }
+    #contactSectionContainer {
+        padding: 30px 60px;
+    }
+    #contactFormContainer form input, #contactFormContainer form textarea {
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 6px 16px;
+        margin-bottom: 20px;
+        border: solid 1px white;
+    }
+}
+
+@media (max-width: 600px) {
+    #contactSectionContainer {
+        padding: 30px;
+    }
+    #contactFormContainer form button {
+        background-color: rgb(255, 255, 255);
+        color: rgba(7, 99, 248);
+        padding: 8px 20px;
+        border: solid 1px white;
+        font-size: 1rem;
+    }
+    #contactSectionContainer h1 {
+        font-size: 2rem;
+    }
+    #contactFormContainer form textarea {
+        max-height: 200px;
+        height: 100px;
+    }
+}
+

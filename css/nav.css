@@ -1,0 +1,239 @@
+nav {
+    width: 100%;
+}
+
+#navInfoContainer {
+    width: 100%;
+    padding: .7rem 100px;
+    background-color: #141E61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.infoBox span {
+    color: white;
+    font-size: .9rem;
+    padding-left: 10px;
+}
+
+.infoBox i {
+    color: white;
+    font-size: 1rem;
+}
+
+#iconsInfoBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.infoIcon {
+    color: white;
+    font-size: .8rem;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #navInfoContainer {
+        display: none;
+    }
+}
+
+#navBarContainer {
+    width: 100%;
+    padding: 1.2rem 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navLogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#navLogo i {
+    color: #0762f8;
+    font-size: 2rem;
+    padding-right: 10px;
+}
+
+#navLogo span {
+    color: #161616;
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+#menuBtn {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+#menuBtn i {
+    font-size: 2rem;
+    color: white;
+}
+
+#navList ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+#navList li {
+    padding-left: 30px;
+}
+
+.listItems {
+    text-decoration: none;
+    color: #161616;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: solid 2px transparent;
+    transition: all .3s ease;
+}
+
+.listItems:hover {
+    border-bottom: solid 2px white;
+}
+
+#navContactBtn {
+    font-size: 1.1rem;
+    color: white;
+    padding: 12px 20px;
+    background-color: #141E61;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .4s ease;
+    text-decoration: none;
+}
+
+#navContactBtn:hover {
+    background-color: #0F044C;
+}
+
+
+@media (max-width: 1024px) {
+
+    #navBarContainer {
+        background-color: #0F044C;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: calc(40px + 2rem);
+        padding: 0;
+        position: fixed;
+    }
+
+    #navHeader {
+        width: 100%;
+        padding: 1rem 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 333;
+    }
+
+    #navLogo {
+        margin-left: 60px;
+    }
+
+    #navLogo span {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    #menuBtn {
+        display: block;
+        margin-right: 60px;
+    }
+
+    #navList {
+        width: 100%;
+        position: absolute;
+        top: 72px;
+        left: -100%;
+        transition: all .6s ease;
+    }
+
+    #navList {
+        width: 100%;
+        background-color: white;
+    }
+
+    #navList ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #navList li {
+        padding: 1rem 60px;
+        width: 100%;
+        border-bottom: solid 1px rgb(197, 197, 197);
+    }
+
+    #navList li a {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #navContactBtn {
+        color: #161616;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    #navContactBtn:hover {
+        background-color: transparent;
+    }
+    
+
+}
+
+@media (max-width: 600px) { 
+
+    #navLogo {
+        margin-left: 30px;
+    }
+
+    #menuBtn {
+        margin-right: 30px;
+    }
+
+    #navList li {
+        padding: 1rem 30px;
+    }
+}
