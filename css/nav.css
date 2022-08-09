@@ -150,6 +150,7 @@ nav {
         height: calc(40px + 2rem);
         padding: 0;
         position: fixed;
+        z-index: 1111;
     }
 
     #navHeader {
