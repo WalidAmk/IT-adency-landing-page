@@ -4,6 +4,7 @@ const menu = document.getElementById('navList');
 const menuItems = document.getElementsByClassName('listItems');
 const navBar = document.getElementById('navBarContainer');
 const contactBtn = document.getElementById('navContactBtn');
+const toHomeBtn = document.getElementById('toHomeBtn');
 
 let clickCounter = 1;
 
@@ -14,6 +15,11 @@ menuBtn.addEventListener('click', () => {
     } else {
         menu.style.left = "-100%";
     }
+    clickCounter++;
+})
+
+contactBtn.addEventListener('click' , () => {
+    menu.style.left = "-100%";
     clickCounter++;
 })
 
@@ -55,6 +61,16 @@ window.addEventListener("scroll", () => {
                 } catch (error) {}
             }
         }
-    }  
+    }
+    
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > screen.height / 2) {
+            toHomeBtn.style.display = 'flex';
+
+        } else {
+            toHomeBtn.style.display = 'none';
+        }
+})  
 })
 

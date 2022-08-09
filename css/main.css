@@ -13,5 +13,31 @@ html {
     font-size: 16px;
 }
 
+#toHomeBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(7, 99, 248);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#toHomeBtn a {
+    display: block;
+    text-decoration: none;
+}
+
+#toHomeBtn a img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    color: white;
+}
+
 
 
